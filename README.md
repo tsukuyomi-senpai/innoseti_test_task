@@ -4,7 +4,7 @@
 
 Чтобы не загружать все зависимости, можно использовать докер
 
-docker build -t <your_tag> .
+docker build -t {name} .
 
 
-docker run -p 80:5000 <your tag>
+docker run -p 80:5000 {name}
