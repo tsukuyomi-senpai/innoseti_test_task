@@ -14,9 +14,6 @@ def get_data():
 
 @app.route('/api/login',methods = ['POST'])
 def login():
-    json = [{"user":"secret"},
-            {"user1":"password1"},
-            {"user2":"password2"}]
     if request.method == 'POST':
         token = request.headers.get('Authorization')
         if token == getenv("API_TOKEN"):
