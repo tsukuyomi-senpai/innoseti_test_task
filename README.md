@@ -10,7 +10,7 @@ docker run -p 80:5000 $name
 
 Тестовый запрос:
 ```sh
-curl 127.0.0.1/api/login --json '{"password":"secret","username":"user"}'
+curl 127.0.0.1/api/login --json '{"password":"secret","username":"user"} -H 'Authorization: token'
 ```
 ---
 Задание с SQL представлено в файле [task.sql](task.sql)
